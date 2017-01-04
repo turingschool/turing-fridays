@@ -1,6 +1,6 @@
 .AdminSpikeCard {
   background: transparentize($teal-accent, .1);
-  border: 1px solid $light-gray-text-color;
+  border: 1px solid $dark-gray-text-color;
   p {
     color: #000;
     margin-bottom: 5px;
@@ -24,6 +24,13 @@
   input {
     margin: 15px;
   }
+}
+
+.DeleteAdminButton {
+  @include button-format($teal-accent, #FFF);
+  border-radius: 50%;
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 .ApproveButton,
