@@ -40,9 +40,8 @@
   width: 150px;
 }
 
-.AddSpikeButton,
-.AdminSubmitButton {
+.AddSpikeButton {
   @include button-format($teal-accent, #FFF);
-  margin: 10px;
-  width: 150px;
+  margin: 0 10px;
+  width: 120px;
 }
