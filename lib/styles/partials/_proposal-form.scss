@@ -68,6 +68,9 @@ input[type=date] {
 }
 
 @media screen and (max-width: 770px) {
+  #SpikeForm {
+    width: 80%;
+  }
   form {
     width: 70%;
   }
@@ -80,5 +83,15 @@ input[type=date] {
   .SubmitButton, .CancelButton {
     margin: 15px 10px;
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .SpikeDate {
+    margin-top: 10px;
+  }
+
+  .SpikeDatePicker {
+    margin-left: 0;
   }
 }
