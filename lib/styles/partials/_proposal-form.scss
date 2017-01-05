@@ -1,7 +1,12 @@
 #SpikeForm {
+  align-items: center;
+  background: $dark-gray-text-color;
+  border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  margin: 10% auto;
+  width: 60%;
 }
 
 form {
@@ -9,14 +14,12 @@ form {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
-  width: 50%;
+  width: 80%;
 }
 
-.modal {
+.Modal {
   background-color: rgba(0,0,0,0.9);
-  display: block;
   height: 100%;
-  left: 0;
   overflow: auto;
   position: fixed;
   top: 0;
@@ -27,18 +30,7 @@ form {
 .FormTitle {
   color: #FFF;
   font-size: 30px;
-  margin-top: 150px;
-  text-align: center;
-}
-
-.SpikeDate {
-  color: #FFF;
-  font-size: 24px;
-  font-family: sans-serif;
-}
-
-.SpikeDatePicker {
-  margin-left: 20px;
+  padding-top: 15px;
 }
 
 input {
@@ -50,6 +42,14 @@ textarea {
   @include input-fields;
   height: 100px;
   resize: none;
+}
+
+input[type=date] {
+  color: $dark-gray-text-color;
+}
+
+.SpikeDatePicker {
+  margin-left: 10px;
 }
 
 .SubmitButton, .CancelButton {
