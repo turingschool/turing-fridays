@@ -4,6 +4,9 @@
   p {
     color: #000;
     margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+     text-overflow: ellipsis;
   }
   span {
     color: #FFF;
