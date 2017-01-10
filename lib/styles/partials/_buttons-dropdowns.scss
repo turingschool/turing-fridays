@@ -1,41 +1,31 @@
 // body
-
 select {
   float: right;
 }
 
 // sign in
 #LogInButton {
-  @include button-format($teal-accent, #FFF, 100px);
-  font-size: 26px;
+  @include button-format($teal-accent, #FFF, 100px, 26px);
   margin-top: 40px;
   padding: 8px;
-  // width: 100px;
 }
 
-
 // admin-spike
-
 .DropdownSelect {
-  @include button-format(#FFF, $teal-accent, 150px);
-  font-size: 17px;
-  // width: 150px;
+  @include button-format(#FFF, $teal-accent, 150px, 17px);
 }
 
 .DeleteButton {
   @include button-format(#f78484, #FFF, 88px);
   margin-top: 15px;
-  // width: 88px;
 }
 
 .ShowAttendeesButton {
-  @include button-format(#FFF, $teal-accent);
-  font-size: 16px;
+  @include button-format(#FFF, $teal-accent, $size: 16px);
   margin-left: 5px;
 }
 
 // Admins
-
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
   margin: 20px 0 0 20px;
@@ -56,10 +46,9 @@ select {
 }
 
 .DeleteAdminButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format($teal-accent, #FFF, $size: 14px);
   border-radius: 50%;
   float: right;
-  font-size: 14px;
 }
 
 .AdminSubmitButton {
@@ -74,10 +63,8 @@ select {
   float: right;
   margin: 20px 10px 0 0;
   select {
-    @include button-format(#FFF, $teal-accent, 120px);
-    font-size: 16px;
+    @include button-format(#FFF, $teal-accent, 120px, 16px);
     margin-left: 10px;
-    // width: 120px;
   }
 }
 
@@ -128,9 +115,8 @@ select {
 
 // Header
 .SignOut {
-  @include button-format($teal-accent, #FFF, 75px);
+  @include button-format($teal-accent, #FFF, 75px, 14px);
   float: right;
-  font-size: 14px;
 }
 
 .AddSpikeButton {
@@ -160,7 +146,6 @@ select {
 }
 
 // Proposal Form
-
 .ButtonContainer {
   display: flex;
   flex-direction: row;
@@ -168,8 +153,7 @@ select {
 }
 
 .SubmitButton, .CancelButton {
-  @include button-format($teal-accent, #FFF, 75px);
-  font-size: 16px;
+  @include button-format($teal-accent, #FFF, 75px, 16px);
   margin: 15px 5px;
   text-align: center;
 }
@@ -198,5 +182,4 @@ select {
 .JoinButton {
   @include button-format($teal-accent, #FFF, 70px);
   margin-top: auto;
-  // width: 70px;
 }
