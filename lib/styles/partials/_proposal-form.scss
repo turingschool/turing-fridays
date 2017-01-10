@@ -58,20 +58,6 @@ input[type=date] {
   margin-left: 10px;
 }
 
-.SubmitButton, .CancelButton {
-  @include button-format($teal-accent, #FFF);
-  font-size: 16px;
-  margin: 15px 5px;
-  text-align: center;
-  width: 75px;
-}
-
-.ButtonContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 @media screen and (max-width: 770px) {
   #SpikeForm, #SpeakerForm, #GearUpForm {
     width: 80%;
@@ -80,14 +66,10 @@ input[type=date] {
     width: 70%;
   }
 }
+
 @media screen and (max-width: 420px) {
   form {
     width: 90%;
-  }
-
-  .SubmitButton, .CancelButton {
-    margin: 15px 10px;
-    padding: 10px;
   }
 
   .SpikeDate {

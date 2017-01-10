@@ -1,0 +1,211 @@
+// body
+select {
+  float: right;
+}
+
+// sign in
+#LogInButton {
+  @include button-format($teal-accent, #FFF);
+  font-size: 26px;
+  margin-top: 40px;
+  padding: 8px;
+  width: 100px;
+}
+
+// admin-spike
+.DropdownSelect {
+  @include button-format(#FFF, $teal-accent);
+  font-size: 17px;
+  width: 150px;
+}
+
+.DeleteButton {
+  @include button-format(#f78484, #FFF);
+  margin-top: 15px;
+  width: 88px;
+}
+
+.ShowAttendeesButton {
+  @include button-format(#FFF, $teal-accent);
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+// Admins
+.OpenAdminsListButton {
+  @include button-format($teal-accent, #FFF);
+  margin: 20px 0 0 20px;
+}
+
+.CloseListButton {
+  @include button-format($teal-accent, #FFF);
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.CloseAttendeeListButton {
+  @include button-format($teal-accent, #FFF);
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.DeleteAdminButton {
+  @include button-format($teal-accent, #FFF);
+  border-radius: 50%;
+  float: right;
+  font-size: 14px;
+}
+
+.AdminSubmitButton {
+  margin-top: 0px;
+  &:hover {
+    background-color: lighten($light-gray-color, 15%);
+    cursor: pointer;
+  }
+}
+
+.SortSpikes {
+  float: right;
+  margin: 20px 10px 0 0;
+  select {
+    @include button-format(#FFF, $teal-accent);
+    font-size: 16px;
+    margin-left: 10px;
+    width: 120px;
+  }
+}
+
+.AdminButtons {
+  display: inline-block;
+}
+
+.ShowMapButton, .AddSpeakerButton, .AddGearUpButton {
+  @include button-format($teal-accent, #FFF);
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .ShowMapButton {
+    display: none;
+  }
+  .SortSpikes {
+    float: left;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .AdminButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      padding: 10px;
+      margin: 8px;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .SortOptions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    select {
+      font-size: 20px;
+      margin: 5px 0;
+      width: 150px;
+    }
+  }
+}
+
+// Header
+.SignOut {
+  @include button-format($teal-accent, #FFF);
+  float: right;
+  font-size: 14px;
+  width: 75px;
+}
+
+.AddSpikeButton {
+  @include button-format($teal-accent, #FFF);
+  margin: 0 10px;
+  width: 120px;
+}
+
+@media screen and (max-width: 420px) {
+
+  .SignOut {
+    font-size: 16px;
+    padding: 5px;
+    order: 3;
+    width: 90px;
+  }
+
+  .AddSpikeButton {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+  }
+}
+
+// Proposal Form
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.SubmitButton, .CancelButton {
+  @include button-format($teal-accent, #FFF);
+  font-size: 16px;
+  margin: 15px 5px;
+  text-align: center;
+  width: 75px;
+}
+
+@media screen and (max-width: 420px) {
+  form {
+    width: 90%;
+  }
+
+  .SubmitButton, .CancelButton {
+    margin: 15px 10px;
+    padding: 10px;
+  }
+
+  .SpikeDate {
+    margin-top: 10px;
+  }
+
+  .SpikeDatePicker {
+    margin-left: 0;
+  }
+}
+
+// Spike
+.StudentSpikesButtons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  width: 50%;
+  .ShowMapButton,
+  .DropdownSelect {
+    margin: 0;
+    width: 150px;
+  }
+}
+
+.JoinButton {
+  @include button-format($teal-accent, #FFF);
+  margin-top: auto;
+  width: 70px;
+}

@@ -25,27 +25,9 @@
   }
 }
 
-.DropdownSelect {
-  @include button-format(#FFF, $teal-accent);
-  font-size: 17px;
-  width: 150px;
-}
-
-.DeleteButton {
-  @include button-format(#f78484, #FFF);
-  margin-top: 15px;
-  width: 88px;
-}
-
 .AttendeesList {
   display: none;
   margin: auto;
-}
-
-.ShowAttendeesButton {
-  @include button-format(#FFF, $teal-accent);
-  font-size: 16px;
-  margin-left: 5px;
 }
 
 .AttendeesModal {
