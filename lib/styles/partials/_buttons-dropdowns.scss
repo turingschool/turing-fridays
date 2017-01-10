@@ -1,28 +1,31 @@
 // body
+
 select {
   float: right;
 }
 
 // sign in
 #LogInButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format($teal-accent, #FFF, 100px);
   font-size: 26px;
   margin-top: 40px;
   padding: 8px;
-  width: 100px;
+  // width: 100px;
 }
 
+
 // admin-spike
+
 .DropdownSelect {
-  @include button-format(#FFF, $teal-accent);
+  @include button-format(#FFF, $teal-accent, 150px);
   font-size: 17px;
-  width: 150px;
+  // width: 150px;
 }
 
 .DeleteButton {
-  @include button-format(#f78484, #FFF);
+  @include button-format(#f78484, #FFF, 88px);
   margin-top: 15px;
-  width: 88px;
+  // width: 88px;
 }
 
 .ShowAttendeesButton {
@@ -32,6 +35,7 @@ select {
 }
 
 // Admins
+
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
   margin: 20px 0 0 20px;
@@ -70,10 +74,10 @@ select {
   float: right;
   margin: 20px 10px 0 0;
   select {
-    @include button-format(#FFF, $teal-accent);
+    @include button-format(#FFF, $teal-accent, 120px);
     font-size: 16px;
     margin-left: 10px;
-    width: 120px;
+    // width: 120px;
   }
 }
 
@@ -124,16 +128,14 @@ select {
 
 // Header
 .SignOut {
-  @include button-format($teal-accent, #FFF);
+  @include button-format($teal-accent, #FFF, 75px);
   float: right;
   font-size: 14px;
-  width: 75px;
 }
 
 .AddSpikeButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format($teal-accent, #FFF, 120px);
   margin: 0 10px;
-  width: 120px;
 }
 
 @media screen and (max-width: 420px) {
@@ -158,6 +160,7 @@ select {
 }
 
 // Proposal Form
+
 .ButtonContainer {
   display: flex;
   flex-direction: row;
@@ -165,29 +168,17 @@ select {
 }
 
 .SubmitButton, .CancelButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format($teal-accent, #FFF, 75px);
   font-size: 16px;
   margin: 15px 5px;
   text-align: center;
-  width: 75px;
 }
 
 @media screen and (max-width: 420px) {
-  form {
-    width: 90%;
-  }
 
   .SubmitButton, .CancelButton {
     margin: 15px 10px;
     padding: 10px;
-  }
-
-  .SpikeDate {
-    margin-top: 10px;
-  }
-
-  .SpikeDatePicker {
-    margin-left: 0;
   }
 }
 
@@ -205,7 +196,7 @@ select {
 }
 
 .JoinButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format($teal-accent, #FFF, 70px);
   margin-top: auto;
-  width: 70px;
+  // width: 70px;
 }
