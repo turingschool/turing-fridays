@@ -57,11 +57,6 @@ describe('admin login', () => {
     it('has a Header component', () => {
       assert.lengthOf(wrapper.find('Header'), 1);
     });
-
-    it.skip('has an Admin component', () => {
-      assert.lengthOf(wrapper.find('Admin'), 1);
-    });
-
   });
 });
 
