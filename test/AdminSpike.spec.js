@@ -98,7 +98,6 @@ describe('AdminSpike component', () => {
     it('should also have a class called AdminSpikeCard on the wrapper container', () => {
       expect(wrapper.hasClass('SpikeCard')).to.equal(true);
     });
-
   });
 
   context('spikes with attendees', () => {

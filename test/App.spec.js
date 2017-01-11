@@ -90,5 +90,4 @@ describe('user sign in', () => {
       assert.lengthOf(wrapper.find('Spikes'), 1);
     });
   });
-
 });
