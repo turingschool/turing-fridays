@@ -9,7 +9,7 @@ select {
 }
 
 .DropdownSelect {
-  @include button-format($darker-accent, 150px, 20px);
+  @include button-format($darker-accent, 160px);
   color: #FFF;
 }
 
