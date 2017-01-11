@@ -7,12 +7,12 @@
   font-size: $size;
   margin: 0 auto;
   outline: none;
-  transition: 0.3s;
+  transition: 0.5s;
   width: $width;
   &:hover {
     background: lighten($color1, 10%);
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
   }
 }
 
