@@ -42,7 +42,7 @@ select {
 }
 
 .OpenAdminsListButton {
-  margin: 20px 0 0 20px;
+  margin: 20px 10px 0 20px;
 }
 
 .CloseListButton {
@@ -166,6 +166,15 @@ select {
 }
 
 @media screen and (max-width: 770px) {
+
+  .AddSpeakerButton {
+    margin-left: 5px;
+  }
+
+  .OpenAdminsListButton {
+    margin-right: 5px;
+  }
+
   .ShowMapButton {
     display: none;
   }
