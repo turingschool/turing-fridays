@@ -26,20 +26,27 @@ select {
 }
 
 // Admins
-.OpenAdminsListButton {
+.OpenAdminsListButton,
+.CloseListButton,
+.CloseAttendeeListButton,
+.ShowMapButton,
+.AddSpeakerButton,
+.AddGearUpButton,
+.AdminSubmitButton {
   @include button-format($teal-accent, #FFF);
+}
+
+.OpenAdminsListButton {
   margin: 20px 0 0 20px;
 }
 
 .CloseListButton {
-  @include button-format($teal-accent, #FFF);
   position: absolute;
   right: 15px;
   top: 15px;
 }
 
 .CloseAttendeeListButton {
-  @include button-format($teal-accent, #FFF);
   position: absolute;
   left: 15px;
   top: 15px;
@@ -53,10 +60,6 @@ select {
 
 .AdminSubmitButton {
   margin-top: 0px;
-  &:hover {
-    background-color: lighten($light-gray-color, 15%);
-    cursor: pointer;
-  }
 }
 
 .SortSpikes {
@@ -72,8 +75,9 @@ select {
   display: inline-block;
 }
 
-.ShowMapButton, .AddSpeakerButton, .AddGearUpButton {
-  @include button-format($teal-accent, #FFF);
+.ShowMapButton,
+.AddSpeakerButton,
+.AddGearUpButton {
   margin-left: 10px;
 }
 
@@ -159,7 +163,6 @@ select {
 }
 
 @media screen and (max-width: 420px) {
-
   .SubmitButton, .CancelButton {
     margin: 15px 10px;
     padding: 10px;
