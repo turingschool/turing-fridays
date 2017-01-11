@@ -94,7 +94,7 @@ select {
 }
 
 .AddSpikeButton {
-  @include button-format($teal-accent, #FFF, 120px);
+  @include button-format($darker-accent, #FFF, 120px);
   margin: 0 10px;
 }
 
