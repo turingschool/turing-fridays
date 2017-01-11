@@ -39,19 +39,6 @@ header {
   text-align: right;
 }
 
-.SignOut {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  float: right;
-  font-size: 14px;
-  width: 75px;
-}
-
-.AddSpikeButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  margin: 0 10px;
-  width: 120px;
-}
-
 @media screen and (max-width: 420px) {
   header {
     height: 390px;

@@ -61,14 +61,6 @@ input[type=date] {
   width: 170px;
 }
 
-.SubmitButton, .CancelButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  font-size: 16px;
-  margin: 15px 5px;
-  text-align: center;
-  width: 75px;
-}
-
 .ButtonContainer {
   display: flex;
   flex-direction: row;
