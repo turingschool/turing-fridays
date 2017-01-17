@@ -131,8 +131,9 @@ select {
 }
 
 .JoinButton {
-  @include button-format($darker-accent, #FFF, 70px);
+  @include button-format($darker-accent, #FFF);
   margin-top: auto;
+  padding: 5px 10px;
 }
 
 @media screen and (max-width: 420px) {
